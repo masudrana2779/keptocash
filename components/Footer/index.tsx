@@ -5,15 +5,15 @@ const FooterComponent = () => {
   return (
     <>
       <div
-        className=""
+        className="py-12"
         style={{
           background:
             "radial-gradient(71.01% 389.29% at 83.54% 17.4%, #02282B 0%, #156469 100%) ",
         }}
       >
         <div className="">
-          <div className="container mx-auto px-4">
-            <div className="flex gap-x-4">
+          <div className="container mx-auto px-40">
+            <div className="grid grid-cols-4 gap-x-4 mb-20">
               <div className="">
                 <div className="max-w-[235px]">
                   <div className="flex">
@@ -30,25 +30,45 @@ const FooterComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="text-white text-base">
-                <div className="leading-6 font-semibold">Company</div>
+              <div className="text-white text-base pl-16">
+                <div className="leading-6 font-semibold mb-4">Company</div>
                 <ul className="leading-7">
                   <li>
-                    <Link href={"/about-us"}>About Us</Link>
+                    <Link
+                      href={"/about-us"}
+                      className="relative before:content-[''] before:w-0 before:top-1/2 before:h-[1px] before:bg-white before:absolute transition-all before:opacity-0 hover:before:w-2 hover:pl-3 before:left-0 before:transition-all duration-300 before:duration-300 hover:before:opacity-100"
+                    >
+                      About Us
+                    </Link>
                   </li>
                   <li>
-                    <Link href={"/careers"}>Careers</Link>
+                    <Link
+                      href={"/careers"}
+                      className="relative before:content-[''] before:w-0 before:top-1/2 before:h-[1px] before:bg-white before:absolute transition-all before:opacity-0 hover:before:w-2 hover:pl-3 before:left-0 before:transition-all duration-300 before:duration-300 hover:before:opacity-100"
+                    >
+                      Careers
+                    </Link>
                   </li>
                   <li>
-                    <Link href={"/services"}>Services</Link>
+                    <Link
+                      href={"/services"}
+                      className="relative before:content-[''] before:w-0 before:top-1/2 before:h-[1px] before:bg-white before:absolute transition-all before:opacity-0 hover:before:w-2 hover:pl-3 before:left-0 before:transition-all duration-300 before:duration-300 hover:before:opacity-100"
+                    >
+                      Services
+                    </Link>
                   </li>
                   <li>
-                    <Link href={"/blog"}>Blog</Link>
+                    <Link
+                      href={"/blog"}
+                      className="relative before:content-[''] before:w-0 before:top-1/2 before:h-[1px] before:bg-white before:absolute transition-all before:opacity-0 hover:before:w-2 hover:pl-3 before:left-0 before:transition-all duration-300 before:duration-300 hover:before:opacity-100"
+                    >
+                      Blog
+                    </Link>
                   </li>
                 </ul>
               </div>
               <div className="text-white text-base">
-                <div className="leading-6 font-semibold">Connect</div>
+                <div className="leading-6 font-semibold mb-4">Connect</div>
                 <div className="leading-7">
                   <Link href="mailto:hi@finsweet.com">hi@finsweet.com</Link>{" "}
                   <br />
@@ -56,10 +76,37 @@ const FooterComponent = () => {
                 </div>
               </div>
               <div className="text-white text-base">
-                <div className="leading-6 font-semibold">Join Newsletter</div>
-                <div className="">
-                  <form></form>
+                <div className="leading-6 font-semibold mb-4">
+                  Join Newsletter
                 </div>
+                <div className="">
+                  <form>
+                    <div className="">
+                      <input
+                        type="text"
+                        placeholder="Type email here"
+                        className="outline-none shadow-none h-12 px-5 rounded-full mb-3"
+                      />
+                    </div>
+                    <div className="">
+                      <button
+                        type="submit"
+                        className="bg-brand-600 px-7 py-3 text-sm leading-5 rounded-full font-semibold text-white"
+                      >
+                        Send Messege
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div className="flex text-base text-white">
+              <div className="w-full">
+                <div className="">© All rights reserved – Kepto Cash</div>
+              </div>
+              <div className="w-full flex justify-end gap-x-4">
+                <Link href={"/privacy-policy"}>Privacy Policy</Link>
+                <Link href={"/terms-conditions"}>Terms & Conditions</Link>
               </div>
             </div>
           </div>
