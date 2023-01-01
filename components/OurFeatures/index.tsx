@@ -3,7 +3,7 @@ import CashOut from "./CashOut";
 import MobileRecharge from "./MobileRecharge";
 import SendMoney from "./sendMoney";
 
-const CallToActionComponent = () => {
+const OurFeaturesComponent = () => {
   return (
     <>
       <SendMoney />
@@ -14,4 +14,4 @@ const CallToActionComponent = () => {
   );
 };
 
-export default CallToActionComponent;
+export default OurFeaturesComponent;

@@ -20,7 +20,7 @@ export const BannerWrap = styled.div`
   }
 
   .slick-dots {
-    bottom: 50px;
+    bottom: 20px;
     li {
       width: 8px;
       height: 8px;

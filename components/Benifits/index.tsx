@@ -12,17 +12,17 @@ const BenifitsCompotent = () => {
     },
     {
       icon: <BsCoin />,
-      title: "Low Charge",
+      title: "Fast Transaction",
       details: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
     },
     {
       icon: <FaRegCreditCard />,
-      title: "Low Charge",
+      title: "Secure Payment",
       details: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
     },
     {
       icon: <TfiHeadphoneAlt />,
-      title: "Low Charge",
+      title: "24/7 Support",
       details: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
     },
   ];
