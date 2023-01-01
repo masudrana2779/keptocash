@@ -8,39 +8,43 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex gap-x-4">
             <div className="">
-              <div className="flex">
-                <Image
-                  src={"/assets/images/Logo.png"}
-                  width={201}
-                  height={47}
-                  alt={"Logo"}
-                />
-              </div>
+              <Link href={"/"}>
+                <div className="flex">
+                  <Image
+                    src={"/assets/images/Logo.png"}
+                    width={201}
+                    height={47}
+                    alt={"Logo"}
+                  />
+                </div>
+              </Link>
             </div>
             <div className="w-full flex items-center">
               <div className="w-full justify-center mr-auto text-white flex">
                 <ul className="flex gap-x-10">
                   <li>
-                    <Link href={"#"}>Home</Link>
+                    <Link href={"/"}>Home</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>Home</Link>
+                    <Link href={"/features"}>Features</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>Home</Link>
+                    <Link href={"/about-us"}>About Us</Link>
                   </li>
                   <li>
-                    <Link href={"#"}>Home</Link>
+                    <Link href={"/contact-us"}>Contact Us</Link>
                   </li>
                 </ul>
               </div>
               <div className="w-56 justify-center text-white flex">
                 <ul className="flex gap-x-10">
                   <li>
-                    <Link href={"#"}>Home</Link>
+                    <Link href={"/signup"} className="text-brand-600">
+                      Signup
+                    </Link>
                   </li>
                   <li>
-                    <Link href={"#"}>Home</Link>
+                    <span className="cursor-pointer">English</span>
                   </li>
                 </ul>
               </div>
