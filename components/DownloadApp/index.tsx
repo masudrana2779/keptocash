@@ -3,7 +3,7 @@ import Image from "next/image";
 const DownloadAppComponent = () => {
   return (
     <>
-      <div className="py-24 bg-slate-50">
+      <div className="py-24 bg-custom_gray-50">
         <div className="container max-w-[930px] mx-auto px-4">
           <div className="flex gap-x-4 items-center justify-between">
             <div className="">

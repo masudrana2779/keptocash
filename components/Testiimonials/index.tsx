@@ -14,7 +14,7 @@ const TestiimonialsComponent = () => {
           <div className="">
             <div className="grid grid-cols-3 gap-x-5">
               {[1, 1, 1].map((item: any, i: number) => (
-                <div key={i} className="p-12 rounded-2xl bg-slate-50">
+                <div key={i} className="p-12 rounded-2xl bg-custom_gray-50">
                   <div className="">
                     <div className="flex gap-x-4 mb-5">
                       <div className="flex">
