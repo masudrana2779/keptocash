@@ -1,9 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [scroll, setScroll] = useState(false);
+
+  const checkScroll = () => {
+    if (window.scrollY > 38) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkScroll);
+    return () => {
+      window.removeEventListener("scroll", checkScroll);
+    };
+  }, []);
+
   return (
     <>
+      <div className={scroll ? "dp-none" : ""}></div>
       <div className="absolute top-0 left-0 w-full py-5 z-50">
         <div className="container mx-auto px-4">
           <div className="flex gap-x-4">
