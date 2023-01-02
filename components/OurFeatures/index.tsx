@@ -6,11 +6,12 @@ import SendMoney from "./sendMoney";
 const OurFeaturesComponent = () => {
   return (
     <>
-      <div id="OurFeatures"></div>
-      <SendMoney />
-      <BillPay />
-      <CashOut />
-      <MobileRecharge />
+      <div id="OurFeatures">
+        <SendMoney />
+        <BillPay />
+        <CashOut />
+        <MobileRecharge />
+      </div>
     </>
   );
 };

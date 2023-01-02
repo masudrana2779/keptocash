@@ -23,16 +23,16 @@ const Header = () => {
               <div className="w-full justify-center mr-auto text-white flex">
                 <ul className="flex gap-x-10">
                   <li>
-                    <Link href={"/"}>Home</Link>
+                    <Link href={"#Home"}>Home</Link>
                   </li>
                   <li>
-                    <Link href={"/features"}>Features</Link>
+                    <Link href={"#OurFeatures"}>Features</Link>
                   </li>
                   <li>
-                    <Link href={"/about-us"}>About Us</Link>
+                    <Link href={"#AboutUs"}>About Us</Link>
                   </li>
                   <li>
-                    <Link href={"/contact-us"}>Contact Us</Link>
+                    <Link href={"#ContactUs"}>Contact Us</Link>
                   </li>
                 </ul>
               </div>
