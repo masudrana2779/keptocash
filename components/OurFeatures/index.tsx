@@ -6,6 +6,7 @@ import SendMoney from "./sendMoney";
 const OurFeaturesComponent = () => {
   return (
     <>
+      <div id="OurFeatures"></div>
       <SendMoney />
       <BillPay />
       <CashOut />
