@@ -2,12 +2,12 @@ const ContactComponent = () => {
   return (
     <>
       <div id="ContactUs">
-        <div className="py-24">
+        <div className="md:py-24 py-5 mb-5">
           <div className="container mx-auto md:px-60 px-4">
-            <div className="text-5xl font-bold leading-[64px] mb-3 text-center">
+            <div className="md:text-5xl text-2xl font-bold md:leading-[64px] mb-3 text-center">
               Contact Us
             </div>
-            <div className="text-base leading-7 mb-20 text-center">
+            <div className="text-base leading-7 md:mb-20 mb-10 text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore.
             </div>
@@ -77,7 +77,7 @@ const ContactComponent = () => {
                     ></textarea>
                   </label>
                 </div>
-                <div className="sm:col-span-2 col-span-1 text-right">
+                <div className="md:col-span-2 col-span-1 text-right">
                   <button
                     type="submit"
                     className="bg-gray-700 hover:bg-gray-800 px-16 py-4 text-sm leading-5 rounded-full font-semibold text-white"
