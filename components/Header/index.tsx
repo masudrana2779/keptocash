@@ -6,7 +6,7 @@ const Header = () => {
   const [scroll, setScroll] = useState(false);
 
   const checkScroll = () => {
-    if (window.scrollY > 38) {
+    if (window.scrollY > 0) {
       setScroll(true);
     } else {
       setScroll(false);
@@ -22,8 +22,17 @@ const Header = () => {
 
   return (
     <>
-      <div className={scroll ? "dp-none" : ""}></div>
-      <div className="absolute top-0 left-0 w-full py-5 z-50">
+      {/* <div className={scroll ? "dp-none" : ""}></div> */}
+      <div
+        className={`fixed top-0 left-0 w-full py-5 z-50 transition-all duration-300 `}
+        style={{
+          background: `${
+            scroll
+              ? "radial-gradient(71.01% 389.29% at 83.54% 17.4%, #02282B 0%, #156469 100%)"
+              : "transparent"
+          }`,
+        }}
+      >
         <div className="container mx-auto px-4">
           <div className="flex gap-x-4">
             <div className="">

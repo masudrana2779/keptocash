@@ -18,6 +18,7 @@ const BannerComponent = () => {
   return (
     <>
       <div
+        id="Home"
         style={{
           background:
             "radial-gradient(71.01% 389.29% at 83.54% 17.4%, #02282B 0%, #156469 100%)",

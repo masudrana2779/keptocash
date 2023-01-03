@@ -29,7 +29,7 @@ const BenifitsCompotent = () => {
   return (
     <>
       <div id="AboutUs">
-        <div className="py-20">
+        <div className="py-24">
           <div className="container mx-auto px-40">
             <div className="flex justify-between items-center gap-x-4">
               <div className="max-w-xl w-full">
