@@ -3,12 +3,12 @@ import Image from "next/image";
 const DownloadAppComponent = () => {
   return (
     <>
-      <div className="py-24 bg-custom_gray-50">
+      <div className="md:py-24 py-5 bg-custom_gray-50">
         <div className="container max-w-[930px] mx-auto px-4">
           <div className="flex gap-4 md:flex-row flex-col items-center justify-between">
-            <div className="">
+            <div className="md:mb-0 mb-10">
               <div className="max-w-sm w-full">
-                <div className="text-3xl font-bold text-black leading-[42px]">
+                <div className="md:text-3xl text-2xl font-bold text-black md:leading-[42px]">
                   Download Kepto Cash
                 </div>
                 <div className="text-base font-semibold leading-7 text-black mb-4">
