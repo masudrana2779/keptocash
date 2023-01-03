@@ -13,7 +13,7 @@ const FooterComponent = () => {
       >
         <div className="">
           <div className="container mx-auto md:px-40 px-4">
-            <div className="grid md:grid-cols-4 grid-cols-1 gap-4 mb-20">
+            <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 sm:gap-y-20 mb-20">
               <div className="">
                 <div className="sm:max-w-[235px]">
                   <div className="flex">
@@ -102,7 +102,7 @@ const FooterComponent = () => {
             </div>
             <div className="flex md:flex-row flex-col-reverse text-base text-white">
               <div className="w-full">
-                <div className="sm:text-left text-center">
+                <div className="md:text-left text-center">
                   © All rights reserved – Kepto Cash
                 </div>
               </div>
