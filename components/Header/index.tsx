@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
+  const router = useRouter();
+  console.log(router);
 
   const checkScroll = () => {
     if (window.scrollY > 0) {
@@ -57,16 +60,40 @@ const Header = () => {
               <div className="w-full md:justify-center justify-start mr-auto text-white flex">
                 <ul className="md:flex block gap-x-10 leading-loose">
                   <li>
-                    <Link href={"#Home"}>Home</Link>
+                    <Link
+                      href={"/"}
+                      className={`${
+                        router.asPath === "/"
+                          ? "text-brand-600"
+                          : "text-white"
+                      }  `}
+                    >
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <Link href={"#OurFeatures"}>Features</Link>
+                    <Link href={"#OurFeatures"} 
+                      className={`${
+                        router.asPath === "/#OurFeatures"
+                          ? "text-brand-600"
+                          : "text-white"
+                      }  `}>Features</Link>
                   </li>
                   <li>
-                    <Link href={"#AboutUs"}>About Us</Link>
+                    <Link href={"#AboutUs"} 
+                      className={`${
+                        router.asPath === "/#AboutUs"
+                          ? "text-brand-600"
+                          : "text-white"
+                      }  `}>About Us</Link>
                   </li>
                   <li>
-                    <Link href={"#ContactUs"}>Contact Us</Link>
+                    <Link href={"#ContactUs"}
+                      className={`${
+                        router.asPath === "/#ContactUs"
+                          ? "text-brand-600"
+                          : "text-white"
+                      }  `}>Contact Us</Link>
                   </li>
                 </ul>
               </div>
