@@ -12,10 +12,10 @@ const FooterComponent = () => {
         }}
       >
         <div className="">
-          <div className="container mx-auto px-40">
-            <div className="grid grid-cols-4 gap-x-4 mb-20">
+          <div className="container mx-auto sm:px-40 px-4">
+            <div className="grid sm:grid-cols-4 grid-cols-1 gap-4 mb-20">
               <div className="">
-                <div className="max-w-[235px]">
+                <div className="sm:max-w-[235px]">
                   <div className="flex">
                     <Image
                       src={"/assets/images/LogoWide.png"}
@@ -30,7 +30,7 @@ const FooterComponent = () => {
                   </div>
                 </div>
               </div>
-              <div className="text-white text-base pl-16">
+              <div className="text-white text-base sm:pl-16">
                 <div className="leading-6 font-semibold mb-4">Company</div>
                 <ul className="leading-7">
                   <li>
@@ -70,7 +70,7 @@ const FooterComponent = () => {
               <div className="text-white text-base">
                 <div className="leading-6 font-semibold mb-4">Connect</div>
                 <div className="leading-7">
-                  <Link href="mailto:hi@finsweet.com">hi@finsweet.com</Link>{" "}
+                  <Link href="mailto:hi@finsweet.com">hi@finsweet.com</Link>
                   <br />
                   <Link href="tel:+1234567890">+(123) 456-7890</Link>
                 </div>
@@ -100,11 +100,13 @@ const FooterComponent = () => {
                 </div>
               </div>
             </div>
-            <div className="flex text-base text-white">
+            <div className="flex sm:flex-row flex-col-reverse text-base text-white">
               <div className="w-full">
-                <div className="">© All rights reserved – Kepto Cash</div>
+                <div className="sm:text-left text-center">
+                  © All rights reserved – Kepto Cash
+                </div>
               </div>
-              <div className="w-full flex justify-end gap-x-4">
+              <div className="w-full flex sm:justify-end justify-center gap-x-4 sm:mb-0 mb-4">
                 <Link href={"/privacy-policy"}>Privacy Policy</Link>
                 <Link href={"/terms-conditions"}>Terms & Conditions</Link>
               </div>

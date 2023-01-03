@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { HiBars3 } from "react-icons/hi2";
 
 const Header = () => {
   const [scroll, setScroll] = useState(false);
@@ -22,9 +23,8 @@ const Header = () => {
 
   return (
     <>
-      {/* <div className={scroll ? "dp-none" : ""}></div> */}
       <div
-        className={`fixed top-0 left-0 w-full py-5 z-50 transition-all duration-300 `}
+        className={`fixed top-0 left-0 w-full py-5 z-50 transition-all duration-300`}
         style={{
           background: `${
             scroll
@@ -34,7 +34,7 @@ const Header = () => {
         }}
       >
         <div className="container mx-auto px-4">
-          <div className="flex gap-x-4">
+          <div className="flex gap-x-4 justify-between">
             <div className="">
               <Link href={"/"}>
                 <div className="flex">
@@ -47,9 +47,13 @@ const Header = () => {
                 </div>
               </Link>
             </div>
-            <div className="w-full flex items-center">
-              <div className="w-full justify-center mr-auto text-white flex">
-                <ul className="flex gap-x-10">
+            <input type="checkbox" className="peer hidden" />
+            <div className="md:hidden flex items-center text-white text-2xl">
+              <HiBars3 />
+            </div>
+            <div className="w-full md:flex block items-center md:static fixed transition-all duration-300 -left-[100%] top-20 md:pl-0 pl-12">
+              <div className="w-full md:justify-center justify-start mr-auto text-white flex">
+                <ul className="md:flex block gap-x-10 leading-loose">
                   <li>
                     <Link href={"#Home"}>Home</Link>
                   </li>
@@ -64,8 +68,8 @@ const Header = () => {
                   </li>
                 </ul>
               </div>
-              <div className="w-56 justify-center text-white flex">
-                <ul className="flex gap-x-10">
+              <div className="w-56 md:justify-center justify-start text-white flex">
+                <ul className="md:flex block gap-x-10 leading-loose">
                   <li>
                     <Link href={"/signup"} className="text-brand-600">
                       Signup
