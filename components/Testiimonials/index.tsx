@@ -4,7 +4,7 @@ const TestiimonialsComponent = () => {
   return (
     <>
       <div className="py-24">
-        <div className="container mx-auto px-40">
+        <div className="container mx-auto sm:px-40 px-4">
           <div className="text-5xl font-bold leading-[64px] mb-3 text-center">
           Customer Testimonials
           </div>
@@ -12,7 +12,7 @@ const TestiimonialsComponent = () => {
           What our clients say
           </div>
           <div className="">
-            <div className="grid grid-cols-3 gap-x-5">
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-x-5">
               {[1, 1, 1].map((item: any, i: number) => (
                 <div key={i} className="p-12 rounded-2xl bg-custom_gray-50">
                   <div className="">
