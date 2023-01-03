@@ -3,9 +3,9 @@ import Image from "next/image";
 const BrandsComponent = () => {
   return (
     <>
-      <div className="py-24 bg-custom_gray-50">
+      <div className="md:py-24 py-5 bg-custom_gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-5xl font-bold leading-[64px] mb-3 text-center">
+          <div className="md:text-5xl text-2xl font-bold md:leading-[64px] mb-3 text-center">
             Brands we Serve
           </div>
           <div className="text-base leading-7 mb-4 text-center">

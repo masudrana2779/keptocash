@@ -47,14 +47,14 @@ const BenifitsCompotent = () => {
               </div>
               <div className="w-full">
                 {data.map((item: any, i: number) => (
-                  <div key={i} className="flex gap-x-8 mb-10">
+                  <div key={i} className="flex gap-x-8 md:mb-10 mb-5">
                     <div className="">
                       <div className="text-brand-600 text-3xl w-[72px] h-[72px] bg-slate-100 rounded-full flex items-center justify-center">
                         {item.icon}
                       </div>
                     </div>
                     <div className="">
-                      <div className="text-2xl font-bold leading-9">
+                      <div className="md:text-2xl text-lg font-bold leading-9">
                         {item.title}
                       </div>
                       <div className="text-base leading-7">{item.details} </div>
