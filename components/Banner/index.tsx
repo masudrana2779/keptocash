@@ -10,10 +10,16 @@ const BannerComponent = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    centerMode: true,
-    centerPadding: "40px",
     autoplay: true,
     autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   };
   return (
     <>
@@ -29,13 +35,13 @@ const BannerComponent = () => {
           <Slider {...settings}>
             {[1, 1, 1, 1].map((item, i: number) => (
               <>
-                <div className="container mx-auto px-40">
+                <div className="container mx-auto md:px-40 px-4">
                   <div className="flex justify-between items-center gap-x-4 pt-[120px] pb-24">
                     <div className="max-w-xs w-full">
-                      <div className="text-brand-600 text-base leading-6 font-semibold mb-2">
+                      <div className="text-brand-600 text-base leading-6 font-semibold md:mb-2 mb-0">
                         Cashless Payment
                       </div>
-                      <div className="text-5xl font-bold text-white leading-[64px] mb-3">
+                      <div className="md:text-5xl text-xl font-bold text-white md:leading-[64px] mb-3">
                         Easy Solution
                       </div>
                       <div className="text-base leading-7 text-white mb-4">
