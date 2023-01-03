@@ -3,7 +3,7 @@ import Image from "next/image";
 const SendMoney = () => {
   return (
     <>
-      <div className="md:py-20 py-5">
+      <div className="md:py-20 py-10">
         <div className="container max-w-[930px] mx-auto px-4">
           <div className="flex sm:flex-row gap-x-4 flex-col-reverse items-center justify-between">
             <div className="">

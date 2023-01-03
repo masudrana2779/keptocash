@@ -3,7 +3,7 @@ import Image from "next/image";
 const BrandsComponent = () => {
   return (
     <>
-      <div className="md:py-24 py-5 bg-custom_gray-50">
+      <div className="md:py-24 py-10 bg-custom_gray-50">
         <div className="container mx-auto px-4">
           <div className="md:text-5xl text-2xl font-bold md:leading-[64px] mb-3 text-center">
             Brands we Serve

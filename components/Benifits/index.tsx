@@ -32,7 +32,7 @@ const BenifitsCompotent = () => {
         <div className="md:py-24 py-5">
           <div className="container mx-auto md:px-40 px-4">
             <div className="flex md:flex-row gap-x-4 flex-col justify-between items-center">
-              <div className="max-w-xl w-full">
+              <div className="max-w-xl w-full md:mb-0 mb-10">
                 <div className="text-brand-600 text-base leading-6 font-semibold mb-2">
                   Cashless Payment
                 </div>

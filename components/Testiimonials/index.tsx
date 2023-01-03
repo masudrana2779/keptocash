@@ -3,7 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 const TestiimonialsComponent = () => {
   return (
     <>
-      <div className="md:py-24 py-5">
+      <div className="md:py-24 py-10">
         <div className="container mx-auto md:px-40 px-4">
           <div className="md:text-5xl text-2xl font-bold md:leading-[64px] mb-3 text-center">
             Customer Testimonials
