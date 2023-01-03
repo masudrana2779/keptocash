@@ -12,7 +12,7 @@ const TestiimonialsComponent = () => {
           What our clients say
           </div>
           <div className="">
-            <div className="grid sm:grid-cols-3 grid-cols-1 gap-x-5">
+            <div className="grid sm:grid-cols-3 grid-cols-1 gap-5">
               {[1, 1, 1].map((item: any, i: number) => (
                 <div key={i} className="p-12 rounded-2xl bg-custom_gray-50">
                   <div className="">
