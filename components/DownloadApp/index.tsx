@@ -5,7 +5,7 @@ const DownloadAppComponent = () => {
     <>
       <div className="py-24 bg-custom_gray-50">
         <div className="container max-w-[930px] mx-auto px-4">
-          <div className="flex gap-x-4 items-center justify-between">
+          <div className="flex gap-4 sm:flex-row flex-col items-center justify-between">
             <div className="">
               <div className="max-w-sm w-full">
                 <div className="text-3xl font-bold text-black leading-[42px]">
