@@ -3,7 +3,7 @@ const ContactComponent = () => {
     <>
       <div id="ContactUs">
         <div className="py-24">
-          <div className="container mx-auto px-60">
+          <div className="container mx-auto sm:px-60 px-4">
             <div className="text-5xl font-bold leading-[64px] mb-3 text-center">
               Contact Us
             </div>
@@ -12,7 +12,7 @@ const ContactComponent = () => {
               eiusmod tempor incididunt ut labore.
             </div>
             <form>
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="w-full">
                   <label className="block">
                     <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
@@ -65,7 +65,7 @@ const ContactComponent = () => {
                     />
                   </label>
                 </div>
-                <div className="w-full col-span-2">
+                <div className="w-full sm:col-span-2 col-span-1">
                   <label className="block">
                     <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">
                       Message
@@ -77,7 +77,7 @@ const ContactComponent = () => {
                     ></textarea>
                   </label>
                 </div>
-                <div className="col-span-2 text-right">
+                <div className="sm:col-span-2 col-span-1 text-right">
                   <button
                     type="submit"
                     className="bg-gray-700 hover:bg-gray-800 px-16 py-4 text-sm leading-5 rounded-full font-semibold text-white"
