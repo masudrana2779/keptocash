@@ -41,7 +41,7 @@ const BannerComponent = () => {
                       <div className="text-brand-600 text-base leading-6 font-semibold md:mb-2 mb-0">
                         Cashless Payment
                       </div>
-                      <div className="md:text-5xl text-xl font-bold text-white md:leading-[64px] mb-3">
+                      <div className="md:text-5xl text-2xl md:leading-[64px] font-bold text-white mb-3">
                         Easy Solution
                       </div>
                       <div className="text-base leading-7 text-white mb-4">

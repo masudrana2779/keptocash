@@ -8,7 +8,7 @@ const SendMoney = () => {
           <div className="flex sm:flex-row gap-x-4 flex-col-reverse items-center justify-between">
             <div className="">
               <div className="max-w-sm w-full">
-                <div className="text-5xl font-bold text-brand-600 leading-[64px] mb-3">
+                <div className="md:text-5xl text-2xl md:leading-[64px]  font-bold text-brand-600 mb-3">
                   Send Money
                 </div>
                 <div className="text-base font-semibold leading-7 text-black mb-4">
