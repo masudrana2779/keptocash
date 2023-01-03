@@ -36,7 +36,7 @@ const BannerComponent = () => {
             {[1, 1, 1, 1].map((item, i: number) => (
               <>
                 <div className="container mx-auto md:px-40 px-4">
-                  <div className="flex justify-between items-center gap-x-4 pt-[120px] pb-24">
+                  <div className="flex sm:flex-row flex-col justify-between items-center gap-x-4 pt-[120px] pb-24">
                     <div className="max-w-xs w-full">
                       <div className="text-brand-600 text-base leading-6 font-semibold md:mb-2 mb-0">
                         Cashless Payment
