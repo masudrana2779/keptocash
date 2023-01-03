@@ -3,7 +3,7 @@ import Image from "next/image";
 const MobileRecharge = () => {
   return (
     <>
-      <div className="py-20">
+      <div className="md:py-20 py-5">
         <div className="container max-w-[930px] mx-auto px-4">
           <div className="flex sm:flex-row gap-x-4 flex-col items-center justify-between">
             <div className="">
@@ -22,7 +22,7 @@ const MobileRecharge = () => {
             </div>
             <div className="">
               <div className="max-w-sm w-full">
-                <div className="text-5xl font-bold text-brand-600 leading-[64px] mb-3">
+                <div className="md:text-5xl text-2xl font-bold text-brand-600 md:leading-[64px] mb-3">
                   Mobile Recharge
                 </div>
                 <div className="text-base font-semibold leading-7 text-black mb-4">
