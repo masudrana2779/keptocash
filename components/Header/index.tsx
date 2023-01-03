@@ -24,7 +24,9 @@ const Header = () => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full py-5 z-50 transition-all duration-300`}
+        className={`fixed top-0 left-0 w-full md:py-5 py-2 z-50 transition-all duration-300 ${
+          scroll ? "shadow-lg" : ""
+        }`}
         style={{
           background: `${
             scroll

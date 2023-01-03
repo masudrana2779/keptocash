@@ -13,7 +13,7 @@ const FooterComponent = () => {
       >
         <div className="">
           <div className="container mx-auto md:px-40 px-4">
-            <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 sm:gap-y-20 mb-20">
+            <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 md:gap-y-0  gap-y-16 mb-20">
               <div className="">
                 <div className="sm:max-w-[235px]">
                   <div className="flex">
