@@ -5,7 +5,7 @@ const BillPay = () => {
     <>
       <div className="py-20">
         <div className="container max-w-[930px] mx-auto px-4">
-          <div className="flex gap-x-4 items-center justify-between">
+          <div className="flex sm:flex-row gap-x-4 flex-col items-center justify-between">
             <div className="">
               <div className="">
                 <div className="flex">
