@@ -9,7 +9,7 @@ const CashOut = () => {
             <div className="">
               <div className="max-w-sm w-full">
                 <div className="md:text-5xl text-2xl font-bold text-brand-600 md:leading-[64px] mb-3">
-                CashOut
+                  CashOut
                 </div>
                 <div className="text-base font-semibold leading-7 text-black mb-4">
                   sample text lorum ipsum sample text sample text sample text

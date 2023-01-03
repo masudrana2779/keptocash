@@ -29,14 +29,14 @@ const BenifitsCompotent = () => {
   return (
     <>
       <div id="AboutUs">
-        <div className="py-24">
-          <div className="container mx-auto sm:px-40 px-4">
-            <div className="flex sm:flex-row gap-x-4 flex-col justify-between items-center">
+        <div className="md:py-24 py-5">
+          <div className="container mx-auto md:px-40 px-4">
+            <div className="flex md:flex-row gap-x-4 flex-col justify-between items-center">
               <div className="max-w-xl w-full">
                 <div className="text-brand-600 text-base leading-6 font-semibold mb-2">
                   Cashless Payment
                 </div>
-                <div className="text-5xl font-bold leading-[64px] mb-3">
+                <div className="md:text-5xl text-2xl font-bold md:leading-[64px] mb-3">
                   Analyze your sales and marketing leads
                 </div>
                 <div className="text-base leading-7 mb-4">
